@@ -102,7 +102,17 @@
                 <li><a href=""><i class="icon ion-ios-download-outline"></i> Downloads</a></li>
                 <li><a href=""><i class="icon ion-ios-star-outline"></i> Favorites</a></li>
                 <li><a href=""><i class="icon ion-ios-folder-outline"></i> Collections</a></li>
-                <li><a href=""><i class="icon ion-power"></i> Sign Out</a></li>
+                <li>
+                  <a class="dropdown-item" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                    Sign Out
+                  </a>
+
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                  </form>
+                </li>
               </ul>
             </div><!-- dropdown-menu -->
           </div><!-- dropdown -->
