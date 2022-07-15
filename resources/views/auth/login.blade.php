@@ -72,6 +72,7 @@
                     </a>
                 @endif
             </div><!-- form-group -->
+            
             <button type="submit" class="btn btn-info btn-block">Sign In</button>
         </form>
         
