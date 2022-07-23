@@ -36,6 +36,9 @@
     <link href="{{ asset('dashboard_assets') }}/lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
     <link href="{{ asset('dashboard_assets') }}/lib/rickshaw/rickshaw.min.css" rel="stylesheet">
 
+    <!-- custom bootstrap 5.2 cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <!-- Starlight CSS -->
     <link rel="stylesheet" href="{{ asset('dashboard_assets') }}/css/starlight.css">
   </head>
@@ -64,16 +67,13 @@
         <a href="#" class="sl-menu-link">
           <div class="sl-menu-item">
             <i class="menu-item-icon ion-ios-pie-outline tx-20"></i>
-            <span class="menu-item-label">Charts</span>
+            <span class="menu-item-label">Slider</span>
             <i class="menu-item-arrow fa fa-angle-down"></i>
           </div><!-- menu-item -->
         </a><!-- sl-menu-link -->
         <ul class="sl-menu-sub nav flex-column">
-          <li class="nav-item"><a href="chart-morris.html" class="nav-link">Morris Charts</a></li>
-          <li class="nav-item"><a href="chart-flot.html" class="nav-link">Flot Charts</a></li>
-          <li class="nav-item"><a href="chart-chartjs.html" class="nav-link">Chart JS</a></li>
-          <li class="nav-item"><a href="chart-rickshaw.html" class="nav-link">Rickshaw</a></li>
-          <li class="nav-item"><a href="chart-sparkline.html" class="nav-link">Sparkline</a></li>
+          <li class="nav-item"><a href="{{ route('addslider') }}" class="nav-link">Add Slider</a></li>
+          <li class="nav-item"><a href="chart-morris.html" class="nav-link">View Slider</a></li>
         </ul>
         
       </div><!-- sl-sideleft-menu -->
@@ -317,5 +317,8 @@
     <script src="{{ asset('dashboard_assets') }}/js/starlight.js"></script>
     <script src="{{ asset('dashboard_assets') }}/js/ResizeSensor.js"></script>
     <script src="{{ asset('dashboard_assets') }}/js/dashboard.js"></script>
+
+    <!-- custom bootstrap 5.2 js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
