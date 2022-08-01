@@ -15,4 +15,8 @@ class SliderController extends Controller
         return view('dashboard/add_slider');
     }
 
+    public function addsliderpost(Request $request){
+        print_r($request->all());
+    }
+
 }

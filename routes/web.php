@@ -24,3 +24,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // SliderController Routes
 Route::get('/add/slider', [SliderController::class, 'addslider'])->name('addslider');
+Route::post('/add/slider/post', [SliderController::class, 'addsliderpost'])->name('addsliderpost');

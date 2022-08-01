@@ -1,5 +1,7 @@
 @extends('layouts.dashboard_master')
-
+@section('dashboard')
+    "active";
+@endsection
 @section('dashboard_content')
 
     <!-- ########## START: MAIN PANEL ########## -->
