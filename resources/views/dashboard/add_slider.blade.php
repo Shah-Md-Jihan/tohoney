@@ -12,22 +12,31 @@
 
         <div class="row row-sm">
           <div class="col-8 m-auto">
-            <div class="card text-bg-success mb-3">
-                <div class="card-header"><h5 class="text-white">Add Slider</h5></div>
+            <div class="card text-bg-light mb-3">
+                <div class="card-header bg-success text-white"><h5>Add Slider</h5></div>
                 <div class="card-body">
-                    <form action="{{ route('addsliderpost') }}" method="post">
+                    <form action="{{ route('addsliderpost') }}" method="post" enctype="multipart/form-data">
                       @csrf
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Slider Title</label>
-                            <input type="text" name="slide_title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please add your slider title!">
+                            <label class="form-label">Product Title</label>
+                            <input type="text" name="product_title" class="form-control" placeholder="Please add Product title!" value="{{ old('product_title') }}">
+                            @error('product_title')
+                                <strong class="text-danger">{{ $message }}</strong>
+                            @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="slider_desc">Slider Description</label>
-                            <textarea name="slide_description" class="form-control" id="slider_desc" rows="4" placeholder="Please add your slider description!"></textarea>
+                            <label>Product Description</label>
+                            <textarea name="product_description" class="form-control" rows="4" placeholder="Please add product description!">{{ old('product_description') }}</textarea>
+                            @error('product_description')
+                                <strong class="text-danger">{{ $message }}</strong>
+                            @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="slide_image" class="form-label">Slide Image</label>
-                            <input type="file" name="slide_image" class="form-control" id="slide_image">
+                            <label class="form-label">Slide Image</label>
+                            <input type="file" name="slide_image" class="form-control">
+                            @error('slide_image')
+                                <strong class="text-danger">{{ $message }}</strong>
+                            @enderror
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
