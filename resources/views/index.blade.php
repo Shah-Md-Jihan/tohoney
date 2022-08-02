@@ -1,5 +1,5 @@
 @extends('layouts.frontend_master')
-@section('frontend_content')
+@section('frontend_section')
 	<!-- banner -->
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		<!-- Indicators-->
@@ -99,7 +99,7 @@
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="{{ asset('frontend_assets') }}/images/m1.jpg" alt="">
+											<img src="images/m1.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -136,7 +136,7 @@
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="{{ asset('frontend_assets') }}/images/m2.jpg" alt="">
+											<img src="images/m2.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -176,7 +176,7 @@
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="{{ asset('frontend_assets') }}/images/m3.jpg" alt="">
+											<img src="images/m3.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -222,7 +222,7 @@
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="{{ asset('frontend_assets') }}/images/m4.jpg" alt="">
+											<img src="images/m4.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -259,7 +259,7 @@
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="{{ asset('frontend_assets') }}/images/m5.jpg" alt="">
+											<img src="images/m5.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -299,7 +299,7 @@
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="{{ asset('frontend_assets') }}/images/m6.jpg" alt="">
+											<img src="images/m6.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -342,7 +342,7 @@
 								<h3 class="col-md-4 effect-bg">Summer Carnival</h3>
 								<p class="w3l-nut-middle">Get Extra 10% Off</p>
 								<div class="col-md-8 bg-right-nut">
-									<img src="{{ asset('frontend_assets') }}/images/image1.png" alt="">
+									<img src="images/image1.png" alt="">
 								</div>
 							</div>
 						</div>
@@ -354,7 +354,7 @@
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="{{ asset('frontend_assets') }}/images/m7.jpg" alt="">
+											<img src="images/m7.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -393,7 +393,7 @@
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="{{ asset('frontend_assets') }}/images/m8.jpg" alt="">
+											<img src="images/m8.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -431,7 +431,7 @@
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="{{ asset('frontend_assets') }}/images/m9.jpg" alt="">
+											<img src="images/m9.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -591,4 +591,169 @@
 							</ul>
 						</div>
 						<!-- //reviews -->
-@endsection
+						<!-- electronics -->
+						<div class="left-side border-bottom py-2">
+							<h3 class="agileits-sear-head mb-3">Electronics</h3>
+							<ul>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Accessories</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Cameras & Photography</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Car & Vehicle Electronics</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Computers & Accessories</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">GPS & Accessories</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Headphones</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Home Audio</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Home Theater, TV & Video</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Mobiles & Accessories</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Portable Media Players</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Tablets</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Telephones & Accessories</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Wearable Technology</span>
+								</li>
+							</ul>
+						</div>
+						<!-- //electronics -->
+						<!-- delivery -->
+						<div class="left-side border-bottom py-2">
+							<h3 class="agileits-sear-head mb-3">Cash On Delivery</h3>
+							<ul>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Eligible for Cash On Delivery</span>
+								</li>
+							</ul>
+						</div>
+						<!-- //delivery -->
+						<!-- arrivals -->
+						<div class="left-side border-bottom py-2">
+							<h3 class="agileits-sear-head mb-3">New Arrivals</h3>
+							<ul>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Last 30 days</span>
+								</li>
+								<li>
+									<input type="checkbox" class="checked">
+									<span class="span">Last 90 days</span>
+								</li>
+							</ul>
+						</div>
+						<!-- //arrivals -->
+						<!-- best seller -->
+						<div class="f-grid py-2">
+							<h3 class="agileits-sear-head mb-3">Best Seller</h3>
+							<div class="box-scroll">
+								<div class="scroll">
+									<div class="row">
+										<div class="col-lg-3 col-sm-2 col-3 left-mar">
+											<img src="images/k1.jpg" alt="" class="img-fluid">
+										</div>
+										<div class="col-lg-9 col-sm-10 col-9 w3_mvd">
+											<a href="">Samsung Galaxy On7 Prime (Gold, 4GB RAM + 64GB Memory)</a>
+											<a href="" class="price-mar mt-2">$12,990.00</a>
+										</div>
+									</div>
+									<div class="row my-4">
+										<div class="col-lg-3 col-sm-2 col-3 left-mar">
+											<img src="images/k2.jpg" alt="" class="img-fluid">
+										</div>
+										<div class="col-lg-9 col-sm-10 col-9 w3_mvd">
+											<a href="">Haier 195 L 4 Star Direct-Cool Single Door Refrigerator</a>
+											<a href="" class="price-mar mt-2">$12,499.00</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-3 col-sm-2 col-3 left-mar">
+											<img src="images/k3.jpg" alt="" class="img-fluid">
+										</div>
+										<div class="col-lg-9 col-sm-10 col-9 w3_mvd">
+											<a href="">Ambrane 13000 mAh Power Bank (P-1310 Premium)</a>
+											<a href="" class="price-mar mt-2">$1,199.00 </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //best seller -->
+					</div>
+					<!-- //product right -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //top products -->
+
+	<!-- middle section -->
+	<div class="join-w3l1 py-sm-5 py-4">
+		<div class="container py-xl-4 py-lg-2">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="join-agile text-left p-4">
+						<div class="row">
+							<div class="col-sm-7 offer-name">
+								<h6>Smooth, Rich & Loud Audio</h6>
+								<h4 class="mt-2 mb-3">Branded Headphones</h4>
+								<p>Sale up to 25% off all in store</p>
+							</div>
+							<div class="col-sm-5 offerimg-w3l">
+								<img src="images/off1.png" alt="" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mt-lg-0 mt-5">
+					<div class="join-agile text-left p-4">
+						<div class="row ">
+							<div class="col-sm-7 offer-name">
+								<h6>A Bigger Phone</h6>
+								<h4 class="mt-2 mb-3">Smart Phones 5</h4>
+								<p>Free shipping order over $100</p>
+							</div>
+							<div class="col-sm-5 offerimg-w3l">
+								<img src="images/off2.png" alt="" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- middle section -->
+	@endsection
