@@ -15,6 +15,12 @@
             <div class="card text-bg-light mb-3">
                 <div class="card-header bg-success text-white"><h5>Add Slider</h5></div>
                 <div class="card-body">
+                  @if (session('slider_add_alert'))
+                  <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>{{ session('slider_add_alert') }}</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  @endif
                     <form action="{{ route('addsliderpost') }}" method="post" enctype="multipart/form-data">
                       @csrf
                         <div class="mb-3">

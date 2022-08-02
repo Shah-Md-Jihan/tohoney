@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SliderController;
+use App\Http\Controllers\FrontendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,10 @@ use App\Http\Controllers\SliderController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/', [FrontendController::class, 'index']);
 
 // some problem show in editor
 Auth::routes();
@@ -26,3 +28,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // SliderController Routes
 Route::get('/add/slider', [SliderController::class, 'addslider'])->name('addslider');
 Route::post('/add/slider/post', [SliderController::class, 'addsliderpost'])->name('addsliderpost');
+Route::get('slider/list', [SliderController::class, 'listSlider'])->name('sliderList');
+

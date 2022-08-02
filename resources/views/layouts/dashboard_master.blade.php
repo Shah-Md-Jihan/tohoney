@@ -73,7 +73,7 @@
         </a><!-- sl-menu-link -->
         <ul class="sl-menu-sub nav flex-column">
           <li class="nav-item"><a href="{{ route('addslider') }}" class="nav-link">Add Slider</a></li>
-          <li class="nav-item"><a href="chart-morris.html" class="nav-link">View Slider</a></li>
+          <li class="nav-item"><a href="{{ route('sliderList') }}" class="nav-link">View Slider</a></li>
         </ul>
         
       </div><!-- sl-sideleft-menu -->
