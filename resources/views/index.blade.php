@@ -4,24 +4,25 @@
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		<!-- Indicators-->
 		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			@php
+				$flag = 0;
+			@endphp
+			@foreach ($sliders as $slider)
+				<li data-target="#carouselExampleIndicators" data-slide-to="{{ $flag++ }}" class="active"></li>
+			@endforeach
 		</ol>
 		<div class="carousel-inner">
 			@php
 				$item = 1;
 			@endphp
 			@foreach ($sliders as $slider)
-				<div class="carousel-item item{{ $item++ }} active" style="background: url({{ asset('uploads/slider/'.$slider->slide_image) }}) no-repeat center;">
+				<div class="carousel-item item1 {{ $loop->first ?'active':'' }}" style="background: url({{ asset('uploads/slider/'.$slider->slide_image) }}) no-repeat center;">
 					<div class="container">
 						<div class="w3l-space-banner">
 							<div class="carousel-caption p-lg-5 p-sm-4 p-3">
-								<p>{{ $slider->slider_description }}</p>
-								<h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">The
-									<span>Big</span>
-									Sale
+								<p>{{ $slider->product_description }}</p>
+								<h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">
+									{{ $slider->product_title }}
 								</h3>
 								<a class="button2" href="product.html">Shop Now </a>
 							</div>
